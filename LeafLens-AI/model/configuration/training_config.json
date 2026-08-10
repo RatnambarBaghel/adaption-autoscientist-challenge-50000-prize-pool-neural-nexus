@@ -1,0 +1,27 @@
+{
+  "original_model_name": "google/gemma-3-27b-it-VLM",
+  "trained_model_name": "adaption_crop_disease_leaf_images",
+  "training_method": "sft",
+  "training_type": "lora",
+  "data_format": "chat",
+  "hyperparams": {
+    "lora": true,
+    "lora_r": 64,
+    "n_evals": 5,
+    "n_epochs": 16,
+    "batch_size": "max",
+    "lora_alpha": 128,
+    "lora_dropout": 0,
+    "min_lr_ratio": 0.1,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0,
+    "learning_rate": 0.0001,
+    "max_grad_norm": 2,
+    "base_model_size": "27B",
+    "train_on_inputs": false,
+    "training_method": "sft",
+    "lr_scheduler_type": "cosine",
+    "scheduler_num_cycles": 0.5,
+    "lora_trainable_modules": "q_proj,k_proj,v_proj,o_proj"
+  }
+}
